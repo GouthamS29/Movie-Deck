@@ -122,15 +122,17 @@ function createMovieCard(movie) {
         <section id="image-holder">
             <img class="poster" alt="${title}" src="${imgLink}"/>
         </section>
-        <h2 class="title">${title}</h2>
-        <p class="movie-overview">${overview}</p>
-        <section class="votes-fav">
-            <section class="votes">
-                <p class="vote-count">Votes: ${voteAvg}</p>
-                <p class="popularity-count">Popularity: ${popularity}</p>
-            </section>
-            <section class="favourites" id="favourites${id}">
-                <i id=icon${id} class="fa-regular fa-heart" style="color: #0d0d0c; font-size:24px"></i>
+        <section id="content-holder">
+            <h2 class="title">${title}</h2>
+            <p class="movie-overview">${overview}</p>
+            <section class="votes-fav">
+                <section class="votes">
+                    <p class="vote-count">Votes: ${voteAvg}</p>
+                    <p class="popularity-count">Popularity: ${popularity}</p>
+                </section>
+                <section class="favourites" id="favourites${id}">
+                    <i id=icon${id} class="fa-regular fa-heart" style="color: #0d0d0c; font-size:24px"></i>
+                </section>
             </section>
         </section>
     `;
