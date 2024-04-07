@@ -1,0 +1,205 @@
+*{
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+body{
+    margin: 5px;
+    background-color: #EEF5FF;
+}
+
+/* Navigation Area CSS */
+
+header{
+    background-color: #EEF5FF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#movie-buff-title{
+    font-family: "Rowdies", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+header > nav > a{
+    text-decoration: none;
+    color: black;
+}
+
+header > nav > a > h1{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+    margin: 0px;
+}
+
+#header-nav-2{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header-nav-2 > ul{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+
+#header-nav-2 > ul > li{
+    font-size: 20px;
+    font-weight: bold;
+    color: #176B87;
+    cursor: pointer;
+}
+
+#nav-img{
+    height: 50px;
+    width: 50px;
+    padding: 0px;
+}
+
+.poster{
+    height: 300px;
+    width: 200px;
+}
+
+/* Search Section CSS */
+
+#search-bar{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+    background-color: #B4D4FF;
+}
+
+#search-input{
+    height: 40px;
+    width: 600px;
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+#search-button{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #1D24CA;
+    color: white;
+    cursor: pointer;
+}
+
+/* Sorting Section CSS */
+
+#sort-options{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #86B6F6;
+}
+
+.sort-button{
+    width: 200px;
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.sort-button-active{
+    border: 2px solid #FF204E;
+}
+
+.active-tab{
+    border: 3px solid #FF204E;
+}
+
+.tab{
+    width: 200px;
+    height: 35px;
+    border-radius: 10px;
+    /* border: none; */
+    cursor: pointer;
+}
+
+/* Movie-List Pagination */
+
+#movie-list-pagination{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+/* Card Layout */
+
+.card{
+    border: 2px solid #176B87;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#image-holder{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.movie-overview{
+    width: 300px;
+    height: 60px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.votes-fav{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+#movie-list{
+    display: grid;
+    gap: 12px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.poster{
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.favourites{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Pagination */
+
+#pagination{
+    display: flex;
+    gap: 20px;
+}
+
+.pagination-btn{
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+    background-color: #176B87;
+}

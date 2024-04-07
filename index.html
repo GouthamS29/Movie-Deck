@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <!-- Navigation Bar -->
+        
+        <header>
+            <nav>
+                <a href="./index.html">
+                    <h1 id="movie-buff-title">MOVIE<img src="./Images/popcorn.png" alt="Popcorn Image" id="nav-img">BUFF</h1>
+                </a>
+            </nav>
+            <nav id="header-nav-2">
+                <ul>
+                    <li><a>About</a></li>
+                    <li><a>Contact Us</a></li>
+                    <li><a>Log In</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Search Section -->
+
+        <section id="search-bar" class="search-bar">
+            <input type="search" name="search" id="search-input" placeholder="Search By Name">
+            <button id="search-button">Search</button>
+        </section>
+
+        <!-- Sorting Section -->
+
+        <section id="sort-options" class="sort-options">
+            <button class="sort-button" id="date-sort">Search By Date</button>
+            <button class="sort-button" id="rating-sort">Search By Rating</button>
+        </section>
+
+        <!-- Tabs Section -->
+
+        <section class="tabs">
+            <button class="tab" id="all-tab">All</button>
+            <button class="tab" id="fav-tab">Favourite</button>
+        </section>
+
+        <!-- Movie List and Pagination -->
+
+        <article id="movie-list-pagination">
+            
+            <!-- Movie List -->
+            <section id="movie-list">
+                
+            </section>
+
+            <!-- Pagination -->
+            <section id="pagination" class="pagination">
+                <button id="prev-button" class="pagination-btn">Prev</button>
+                <button id="page-number-button" class="pagination-btn">1</button>
+                <button id="next-button" class="pagination-btn">Next</button>
+            </section>
+            
+        </article>
+        
+        <script src="./script.js" async defer></script>
+    </body>
+</html>
